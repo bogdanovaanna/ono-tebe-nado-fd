@@ -39,7 +39,7 @@ ul {
 .header-left {
 display: flex;
 align-items: center;
-gap: 100px;
+gap: 80px;
 
 }
 
@@ -137,10 +137,12 @@ gap: 100px;
 
 .text-center {
     text-align: center;
+    padding: 20px;
 }
 
 .text-right {
     text-align: right;
+    padding: 20px;
 }
 
 .cover .description {
@@ -149,7 +151,7 @@ gap: 100px;
   z-index: 2;
   justify-content: space-between;
   align-items: center;
-  margin-top: 106px;
+  margin-top: 66px;
   flex-grow: 1;
 }
 
@@ -322,10 +324,11 @@ gap: 100px;
     display: grid;
     grid-template-columns: 359px 1fr;
     align-items: flex-start;
+    gap: 72px;
 }
 
 .about__logo {
-    margin: 155px 789px 320px 71px;
+    margin: 80px 789px 320px 71px;
     padding: 64px 45.5px 62px 46.5px;
     width: 240px;         
     height: 240px;
@@ -350,8 +353,8 @@ gap: 100px;
     font-weight: 700;
     line-height: normal;
     text-transform: uppercase;
-    margin: 256px 426px 100px 0;
-    width: 291px;
+    margin: 170px 426px 100px 0;
+    width: 100%;
     height: 47px;
 }
 
@@ -367,39 +370,41 @@ gap: 100px;
 
 /* --- Подвал --- */
 .footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    padding: 0px 50px 82px 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 90%;
+  margin: 80px 50px 82px 50px;
 }
 
 .footer address {
-    width: 265px;
-    height: 98px;
-    font-weight: 400;
-    font-style: normal;
-    line-height: 24.3px;
-    text-underline-offset: 4px;
+  width: 265px;
+  height: 98px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 24.3px;
+  text-underline-offset: 4px;
+  
 }
 
 .footer nav ul {
-    display: flex;
-    align-items: center;
-    width: 160px;
-    height: 70px;
-    flex-direction: column;
-    gap: 2px;
-    text-underline-offset: 4px;
+  display: flex;
+  align-items: center;
+  width: 160px;
+  height: 70px;
+  flex-direction: column;
+  gap: 2px;
+  text-underline-offset: 4px;
 }
 
 .footer .socials {
-    display: flex;
-    width: 240px;
-    align-items: flex-start;
-    gap: 48px;
+  display: flex;
+  width: 240px;
+  align-items: flex-start;
+  gap: 48px;
 }
 
 .footer .socials img {
-    width: 48px;
-    height: 48px;
+  width: 48px;
+  height: 48px;
 }
