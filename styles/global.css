@@ -7,7 +7,12 @@
 body {
   width: 1100px;
   margin: 0 auto;
-  font-family: Raleway, sans-serif;
+  min-height: 100px;
+  font-family: "Raleway", "sans-serif";
+  font-weight: 400;
+  line-height: 1.5;
+  color: #000;
+  background: #fff;
 }
 
 h1,
@@ -25,8 +30,17 @@ blockquote {
   padding: 0;
 }
 
+h1, h2, h3 {
+  font-family: "Raleway", "sans-serif";
+  font-weight: 700;
+}
+
 a {
   color: inherit;
+}
+
+ul {
+  list-style: none;
 }
 
 img {

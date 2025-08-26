@@ -6,8 +6,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <title>Оно тебе надо — аукцион вещей, в которые никто не верил</title>
         <link rel="stylesheet" href="./fonts/fonts.css"/>
-        <link rel="stylesheet" href="./styles/style.css"/>
         <link rel="stylesheet" href="./styles/global.css"/>
+        <link rel="stylesheet" href="./styles/style.css"/>
     </head>
     <body>
         <!-- Шапка -->
@@ -16,17 +16,11 @@
             <!-- меню -->
                 <nav class="header__menu">
                     <ul class="header__menu-list">
-                        <li class="header_menu-item header_menu-item_active">
-                            <a class="header_menu-link">главная</a>
-                        </li>
-                        <li class="header__menu-item separator">
-                            <img src="./images/list_marker.svg" alt="Разделитель">
+                        <li class="header_menu-item">
+                            <a class="header_menu-link header_menu-link_active">главная</a>
                         </li>
                         <li class="header_menu-item">
                             <a class="header_menu-link" href="#lots">посмотреть лоты</a>
-                        </li>
-                        <li class="header__menu-item separator">
-                            <img src="./images/list_marker.svg" alt="Разделитель">
                         </li>
                         <li  class="header_menu-item">
                             <a class="header_menu-link" href="#about">об аукционе</a>
@@ -56,7 +50,7 @@
                 <h1 class="cover__title">
                     <span class="accent-span">оно</span>
                     <span class="accent-span text-center">тебе</span>
-                    <span class="accent-span text-right">надо</span>
+                    <span class="accent-span text-right">над<span class="no-space">о</span></span>
                 </h1>
                 <div class="description">
                     <p>Аукцион вещей, в которые никто не верил</p>
@@ -66,26 +60,35 @@
              <!-- Лоты -->
             <section class="lots" id="lots">
                 <h2 class="lots__heading">Лоты</h2>
-                <section class="content">
-                    <div  class="card card-film">
-                        <div class="overlay"></div>
+                <ul class="lots__card-list">
+                    <li class="lots__card-list-item">
+                        <a href="#" class="card__link">
+                            <article  class="card card-type-film">
+                                <div class="overlay"></div>
+                                <h3 class="card__title">Фильм режиссёра, который бросил киношколу</h3>
+                                <p class="card__text">Не просто бросил, а ушёл с первой лекции. Какой была бы ваша ставка, если бы вы не знали, что режиссёр — Пол Томас Андерсон?</p>
+                            </article>
+                        </a>
+                    </li>
+                    <li class="lots__card-list-item"></li>
+                        <a href="#" class="lots__link">
+                            <article  class="card card-type-book">
+                                <div class="overlay"></div>
+                                <h3  class="card__title">Книга, где описан один скучный день из жизни рекламного агента</h3>
+                                <p  class="card__text">Объёмом почти в тысячу страниц. Иногда без знаков препинания и с переходами на древнеанглийский. В ней одновременно рассказывается о 16 июня 1904 года и об истории литературы, начиная с античных времён. И это всё накладывается на эпическую поэму Гомера. Сколько бы вы поставили на «Улисса» Джеймса Джойса?</p>
+                            </article>
+                        </a>
+                    </li>
+                    <li class="lots__card-list-item"></li>
                         <a href="#" class="lots__link"></a>
-                        <h3 class="card__title">Фильм режиссёра, который бросил киношколу</h3>
-                        <p class="card__text">Не просто бросил, а ушёл с первой лекции. Какой была бы ваша ставка, если бы вы не знали, что режиссёр — Пол Томас Андерсон?</p>
-                    </div>
-                    <div  class="card card-book">
-                        <div class="overlay"></div>
-                        <a href="#" class="lots__link"></a>
-                        <h3  class="card__title">Книга, где описан один скучный день из жизни рекламного агента</h3>
-                        <p  class="card__text">Объёмом почти в тысячу страниц. Иногда без знаков препинания и с переходами на древнеанглийский. В ней одновременно рассказывается о 16 июня 1904 года и об истории литературы, начиная с античных времён. И это всё накладывается на эпическую поэму Гомера. Сколько бы вы поставили на «Улисса» Джеймса Джойса?</p>
-                    </div>
-                    <div   class="card card-painting no-right-margin">
-                        <div class="overlay"></div>
-                        <a href="#" class="lots__link"></a>
-                        <h3  class="card__title">Картина, которую повторит даже 5-летний сын маминой подруги</h3>
-                        <p  class="card__text">Ну действительно, там линия, тут кружочек, а здесь и вовсе что-то похожее на инфузорию-туфельку. Никаких полей, лесов, котиков... Сколько бы вы на такое поставили, если бы не знали, что это — одна из революционных работ Кандинского?</p>
-                    </div>
-                </section>
+                            <article   class="card card-type-painting no-right-margin">
+                                <div class="overlay"></div>
+                                <h3  class="card__title">Картина, которую повторит даже 5-летний сын маминой подруги</h3>
+                                <p  class="card__text">Ну действительно, там линия, тут кружочек, а здесь и вовсе что-то похожее на инфузорию-туфельку. Никаких полей, лесов, котиков... Сколько бы вы на такое поставили, если бы не знали, что это — одна из революционных работ Кандинского?</p>
+                            </article>
+                        </a>
+                    </li>
+                </ul>
                 <a href="#" class="lots__more">посмотреть больше</a>
             </section>
             <!-- Об аукционе -->
@@ -113,12 +116,12 @@
             <nav class="footer_menu">
                 <ul class="footer_menu-list">
                     <li class="footer_menu-item">
-                        <a class="footer_menu-link" href="#">главная</a>
+                        <a class="footer_menu-link footer_menu-item_active" href="#">главная</a>
                     </li>
                     <li class="footer_menu-item">
                         <a class="footer_menu-link" href="#lots">посмотреть лоты</a>
                     </li>
-                    <li class="footer_menu-item footer_menu-item_active">
+                    <li class="footer_menu-item">
                         <a class="footer_menu-link">об аукционе</a>
                     </li>
                 </ul>
