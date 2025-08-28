@@ -7,6 +7,12 @@
   position: relative;
 }
 
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+}
+
 .header__menu {
   display: flex;
   align-items: center;
@@ -19,6 +25,9 @@
   gap: 28px;
   list-style-type: circle;
   list-style-position: outside;
+  gap: 13px;
+  list-style-type: circle;
+  list-style-position: inside;
   text-underline-offset: 4px;
 }
 
@@ -29,6 +38,11 @@
 
 .header_menu-item_active {
   text-decoration: none;
+}
+
+.header_menu-item {
+  font-size: 18px;
+  text-decoration: underline;
 }
 
 .header_menu-item:first-child {
@@ -42,6 +56,7 @@
 }
 
 .header__adress {
+  color: #000;
   font-family: "Raleway", "sans-serif";
   font-size: 18px;
   font-style: normal;
@@ -194,6 +209,13 @@
   background-position: center;
 }
 
+.overlay {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 1;
+}
+
 .no-right-margin {
   margin-right: 0;
 }
@@ -267,6 +289,14 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  align-items: flex-start;
+  gap: 117.5px;
+  margin: 120px 24px 180px 24px;
+}
+
+.about__logo {
+  margin: 35px 765px 320px 47px;
+  padding: 64px 45.5px 62px 46.5px;
   width: 240px;         
   height: 240px;
   border-radius: 50%;   /* круг */
@@ -279,6 +309,16 @@
 }
 
 .about__text h2 {
+  display: block;
+  align-items: center;
+  justify-content: center;
+  width: 100%;         
+  height: auto;
+  background: #000; 
+}
+
+.about__text h2 {
+  color: #000;
   font-family: "Raleway", "sans-serif";
   font-size: 40px;
   font-style: normal;
@@ -293,6 +333,11 @@
   display: grid;
   justify-content: start;
   gap: 24px;
+  margin: 136px 0 100px 0;
+  width: 100%;
+}
+
+.about__text p {
   font-family: "Raleway", "sans serif";
   font-size: 20px;
   font-style: normal;
@@ -302,6 +347,7 @@
 }
 
 .about__text p:last-child {
+  margin-top: 24px;
   margin-bottom: 0;
 }
 
