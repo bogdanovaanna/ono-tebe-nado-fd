@@ -42,19 +42,16 @@
 }
 
 .header__adress {
+  justify-self: end;
+  text-align: left;
+  margin-right: 38px;
+  padding: 0px 0 6px 0;
   font-family: "Raleway", "sans-serif";
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
   line-height: 24.3px;
   text-underline-offset: 4px;
-}
-
-.header__adress {
-  justify-self: end;
-  text-align: left;
-  margin-right: 38px;
-  padding: 0px 0 6px 0;
 }
 
 /* --- Секция cover --- */
